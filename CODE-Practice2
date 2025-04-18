@@ -4,7 +4,7 @@
 % ------------------------------------------
 vehiculo(toyota, corolla, sedan, 22000, 2022).
 vehiculo(toyota, rav4, suv, 28000, 2022).
-vehiculo(ford, mustang, deportivo, 45000, 2023).
+vehiculo(ford, mustang, sport, 45000, 2023).
 vehiculo(ford, explorer, suv, 35000, 2022).
 vehiculo(ford, focus, sedan, 21000, 2021).
 vehiculo(bmw, x5, suv, 60000, 2021).
