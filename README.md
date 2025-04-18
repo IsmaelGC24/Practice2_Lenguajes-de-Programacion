@@ -21,4 +21,3 @@ El sistema aplica restricciones de presupuesto y asegura que el valor total del 
 ## Medios utilizados
 
 - SWISH (https://swish.swi-prolog.org/) para correr el código en línea.
-- Prolog (SWI-Prolog) para uso local.
