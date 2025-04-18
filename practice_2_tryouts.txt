@@ -1,0 +1,32 @@
+
+% Ver todos los vehículos registrados
+listing(vehiculo).
+
+% ¿Qué referencias están dentro de un presupuesto de $25,000?
+findall(Ref, cumple_presupuesto(Ref, 25000), Resultado).
+
+% ¿Qué SUVs cuestan menos de $30,000?
+findall(Ref, cumple_tipo_presupuesto(Ref, suv, 30000), Resultado).
+
+% Referencias de vehículos BMW
+vehiculos_por_marca(bmw, Resultado).
+
+% Reporte de sedanes Honda con precio unitario máximo de $25,000
+generar_reporte(honda, sedan, 25000, Resultado).
+
+% Reporte de SUVs Ford con precio unitario máximo de $40,000
+generar_reporte(ford, suv, 40000, Resultado).
+
+% Caso 1: SUVs Toyota por debajo de $30,000
+findall(Ref, (vehiculo(toyota, Ref, suv, Precio, _), Precio < 30000), Resultado).
+
+% Caso 2: Vehículos Ford agrupados por tipo y año
+bagof(Ref, vehiculo(ford, Ref, Tipo, _, Año), Lista), 
+write((Tipo, Año, Lista)), nl, fail.
+
+% Caso 3: Valor total de sedanes por debajo de $500,000
+findall(vehiculo(Marca, Ref, sedan, Precio, Año),
+        (vehiculo(Marca, Ref, sedan, Precio, Año), Precio =< 500000),
+        Lista),
+valor_total(Lista, Total),
+write('Total: '), write(Total).
