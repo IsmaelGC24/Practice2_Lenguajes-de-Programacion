@@ -1,3 +1,4 @@
+%CONSULTAS PARA COMPROBAR EL FUNCIONAMIENTO DEL PROGRAMA PRACTICE II:
 
 % Ver todos los vehículos registrados
 listing(vehiculo).
