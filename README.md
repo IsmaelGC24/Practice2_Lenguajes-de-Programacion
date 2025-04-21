@@ -1,6 +1,6 @@
 Solution for Programming Languages ​​Practice 2. Created by: Ismael García Ceballos and Kevin Eduardo Hernández Durango.
 
-Video link:
+Video link: https://youtu.be/YoARNrwc-cc
 
 # Prolog Vehicle Catalog System
 
